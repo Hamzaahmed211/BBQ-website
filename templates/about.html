@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <button><a href="{{ url_for('home') }}">Home</a></button>
+                <button><a href="{{ url_for('about') }}">Login</a></button>
+                <button><a href="{{ url_for('membership') }}">Register</a></button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Login,Now to start browsing our menus!</p>
+            <form action="noaction.php"></form>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your UserName">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Password">
+            </div>
+            <button><a href="{{ url_for('home') }}" class="btn">Login</a></button>
+
+            <p>Don't have an account?</p>
+            
+            <button><a href="{{ url_for('membership') }}" class="btn">register</a></button>
+        </section>
+    </main>
+</body>
+</html>

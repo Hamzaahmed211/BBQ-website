@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>        
+                <button><a href="{{ url_for('home') }}">Home</a></button>
+                <button><a href="{{ url_for('about') }}">Login</a></button>
+                <button><a href="{{ url_for('membership') }}">Register</a></button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Welcome to Baba's BBQ</h1>
+            <p>Looking for a place to Enjoy some amazing BBQ. Check out our menu today!</p>
+            <button><a href="{{ url_for('about') }}" class="btn">Login</a></button>
+        </section>
+    </main>
+</body>
+</html>
